@@ -5,32 +5,203 @@ html{
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Open Sans;
 }
 
 header {
 
 	width:100%;
-	height: 5rem;
-	background-color:grey;
+	height: 3.5rem;
+	position: absolute;
+		
+}
+
+
+.nav-container{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:rgb(250,250,250);
+	box-shadow: 0px 0px 3px 3px #DCDCDC;
+	position: absolute;
+	z-index: 100;
+}
+
+.hamburger-icon{
+	max-width: 0;
+	height: 3.5rem;
+	background: url(images/hamburger-icon.png) no-repeat center;
+	display: block;
+	z-index: 99;
+	
+}
+
+.logo{
+	min-width: 150px;
+	height: 3.5rem;
+	background-color: blue;
+	z-index: 99;
+
+}
+
+
+ ul {
+	display: flex;
+	text-align: center;
+	height: 3.5rem;
+	overflow: hidden;
+	box-sizing: border-box;
+	z-index: 99;
+}
+
+li {
+	
+	list-style-type: none;
+	font-size: 1rem;
+	padding: 15px 25px;
+
 
 
 }
 
+li:active{
+		background-color: rgb(242,242,242);
+}
+
+a{
+	text-decoration: none;
+}
+
+a:active{
+	color: black;
+	font-weight: bold;
+}
+a:visited{
+	font-weight: bold;
+}
+.nav-contact{
+	
+	min-width: 200px;
+	height: 3.5rem;
+	margin-right: 50px;
+	display: flex;
+	align-items: center;
+	z-index: 99;
+
+}
+.nav-contact h4{
+	font-size: 0.85rem;
+	display: inline-block;
+	
+
+}
+
+
 .banner{
-	background-image: url(seguros-banner.jpg);
+	background-image: url(images/seguros-banner.jpg);
 	background-position: center center;
 	background-size: cover;
 	height: 600px;
 	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 3.5rem;
 
 }
 
 #text-banner{
-	  margin: 0 auto;
+  margin: 0 auto;
   position: relative;
   text-align: center;
-  top: 40%;
+  top: 25%;
   width: 60%;
-  color:white;
-  font-size: 2rem
+  color:black;
+  font-size: 2rem;
+
 }
+
+hr{
+	display: block;
+	height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#nuestros-servicios h1{
+
+	text-align: center;
+	margin-top: 100px;
+	font-size: 2rem;
+}
+
+@media only screen and (max-width: 1000px){
+
+.show{
+	margin-top: 9rem;
+}
+
+ul {
+	position: absolute;
+	width: 100%;
+	height: 14rem;
+	margin-top: -8rem;
+	display: inline-block;
+	z-index: 98;
+		transition: margin-top 0.4s;
+	
+}
+li{
+
+	padding: 0;
+	background-color: rgb(250,250,250);
+	box-sizing: border-box;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+
+.hamburger-icon{
+	width: 70px;
+	height: 3.5rem;
+	min-width: 70px;
+	margin-left: 10px;
+	background: url(images/hamburger-icon.png) no-repeat center;
+	background-size: 2rem 2rem;
+	display: block;
+
+}
+
+
+.logo{
+	margin-left: 25px;
+}
+
+.banner{
+	-webkit-filter: blur(2px); /* Safari */
+    filter: blur(2px);
+}
+
+#text-banner{
+
+  top: 10%;
+  width: 70%;
+  font-size: 1.5rem;
+
+}
+
+.banner{
+	height: 500px;
+}
+
+.nav-contact{
+	margin-right: 0px;
+	min-width: 100px;
+}
+
+}
+

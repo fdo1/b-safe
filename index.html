@@ -7,6 +7,8 @@
 		<title>B-Safe Seguros</title>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 		 <meta name="HandheldFriendly" content="true">
   		<meta name="viewport" content="width=device-width, initial-scale=0.666667, maximum-scale=0.666667, user-scalable=0">
@@ -17,17 +19,54 @@
 	<body>
 		
 		<header>
+			<div class="nav-container"> 
+
+			<a href="#" class="hamburger-icon"><img src=""></a> 
+
+
+			<div class="logo">
+
+			</div>
+
+
+			<ul class="menu-list">
 			
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Quiénes somos</a></li>
+					<li><a href="#">Nuestros servicios</a></li>
+					<li><a href="#">Contacto</a></li>
+
+			</ul>		
+		
+
+			<div class="nav-contact">
+				<h4>¡Escríbenos!</h4>
+			</div>
+
+			</div>
 
 		</header>
+		<script>
+
+			$('.hamburger-icon').on('click', function(){ 
+				$('ul').toggleClass('show');
+				//$('ul').slideToggle(400);
+			});
+		</script>
 
 		<div class="banner" width:"100%">
 			<div id="text-banner">
-				<h1>Estamos a tu lado para que te sientas seguro</h1>
+				<h1>Estamos a tu lado para que siempre estés seguro</h1>
+				<hr/>
+				<h3>Somos el broker de seguros más confiable de México</h3>
 			</div>
 		</div>
 
+		<div id="nuestros-servicios">
+			
+			<h1>Nuestros Servicios</h1>
 
+		</div>
 
 	</body>
 
