@@ -1,11 +1,15 @@
 html{
 	font-size:16px;
+
+
 }
+
 
 * {
 	margin: 0;
 	padding: 0;
 	font-family: Open Sans;
+	box-sizing: border-box;
 }
 
 header {
@@ -13,7 +17,7 @@ header {
 	width:100%;
 	height: 3.5rem;
 	position: absolute;
-		
+	z-index: 100;
 }
 
 
@@ -23,10 +27,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color:rgb(250,250,250);
+	background-color: white;
 	box-shadow: 0px 0px 3px 3px #DCDCDC;
 	position: absolute;
-	z-index: 100;
+
+
 }
 
 .hamburger-icon{
@@ -34,40 +39,40 @@ header {
 	height: 3.5rem;
 	background: url(images/hamburger-icon.png) no-repeat center;
 	display: block;
-	z-index: 99;
-	
+	cursor: pointer;
 }
 
 .logo{
 	min-width: 150px;
 	height: 3.5rem;
-	background-color: blue;
-	z-index: 99;
-
+	text-align: center;
+	background: url(images/logo-b-safe.jpg) no-repeat center;
+	background-size: 3.2rem 3.2rem;
 }
 
 
- ul {
+/*Temporary text for logo*/
+
+ul {
 	display: flex;
 	text-align: center;
-	height: 3.5rem;
+	height: auto;
 	overflow: hidden;
 	box-sizing: border-box;
-	z-index: 99;
+
 }
 
-li {
+ul li {
 	
 	list-style-type: none;
 	font-size: 1rem;
+	text-align: center;
 	padding: 15px 25px;
-
-
 
 }
 
-li:active{
-		background-color: rgb(242,242,242);
+ul li:active{
+		/*background-color: rgb(242,242,242);*/
 }
 
 a{
@@ -88,13 +93,26 @@ a:visited{
 	margin-right: 50px;
 	display: flex;
 	align-items: center;
-	z-index: 99;
-
+	overflow: hidden;
+	z-index: 100;
 }
+#wa-icon{
+	width: 50px;
+	height: 3.5rem;
+	background: url(images/wa-icon.png) no-repeat center;
+	background-size: 2rem 2rem;
+	display: block;
+}
+
 .nav-contact h4{
-	font-size: 0.85rem;
+	font-size: 1rem;
+	font-weight: bold;
+	font-style: italic;
+	padding-right: 10px;
+	color: green;
 	display: inline-block;
-	
+	overflow: hidden;
+
 
 }
 
@@ -117,12 +135,12 @@ a:visited{
   text-align: center;
   top: 25%;
   width: 60%;
-  color:black;
-  font-size: 2rem;
+  color: rgb(242,242,242);
+  font-size: 1.7rem;
 
 }
 
-hr{
+#text-banner hr{
 	display: block;
 	height: 1px;
     border: 0;
@@ -134,37 +152,464 @@ hr{
 #nuestros-servicios h1{
 
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
 	font-size: 2rem;
 }
 
+#nuestros-servicios p{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 50%;
+	text-align: center;
+	color: grey;
+}
+
+/*Sección de seguros*/
+
+.seccion-seguros{
+
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+.seccion-seguros .seguro-contenido{
+
+	box-sizing: border-box;
+	width: 25%;
+	max-width: 24%;
+	height: 350px;
+	margin-top: 30px;
+	background-color: rgb(250,250,250);
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	box-shadow: 3px 3px 3px 3px rgb(235,235,235);
+}
+.seccion-seguros .seguro-contenido img{
+	object-fit: cover;
+	width: 100%;
+	height: 250px;
+	display: block;
+}
+.seccion-seguros .seguro-contenido h4{
+	width: 90%;
+	padding-top: 20px;
+	margin: 0 auto;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+/*.seccion-seguros .seguro-contenido .mas-info-button{
+
+	color: rgb(0,113,188);
+	border: 1px solid rgb(0,113,188);
+	border-radius: 5px;
+	width: 100px;
+	height: 2rem;
+	/*margin: 0 auto;
+	position: absolute;
+	bottom: 20px;
+	margin-left: 30%;
+
+}
+.mas-info-button span{
+
+	vertical-align: middle;
+}*/
+
+.grey-banner{
+	width: 100%;
+	height: auto;
+	margin-top: 70px;
+	background-color: rgb(242,242,242);
+	display: flex;
+	justify-content: center;
+}	
+
+
+.slider-container{
+
+	width: 80%;
+	height: auto;
+	margin-bottom: 60px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+
+.profile-container{
+	
+	width: 33%;
+	height: auto;
+	margin-top: 60px;
+	align-items: center;
+}
+
+.profile-container img{
+
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	height: 130px;
+	width: 130px;
+	border-radius: 100%;
+}
+.profile-container h4{
+
+
+	text-align: center;
+	margin-top: 30px;
+}
+.profile-container h3{
+
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	font-style: italic;
+}
+hr{
+	display: block;
+	height: 1px;
+	width: 10%;
+    border: 0;
+    border-top: 3px solid rgb(5,25,71);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+
+}
+.space{
+	width: 10%;
+	height: auto;
+
+}
+/*.rslides li{
+
+	backface-visibility: hidden;
+	position: absolute;
+  	display: none;
+  	width: 100%;
+  	left: 0;
+  	top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+ }*/
+
+.contact-banner{
+
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #3F538C;
+	
+}
+.contact-banner hr{
+	
+    border-top: 3px solid white;
+
+}
+.contact-wrap{
+
+	width: 50%;
+	height: auto;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	padding: 0 20px 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+}
+.contact-wrap h1{
+	width: 100%;
+	text-align: center;
+	margin-top:0px;
+	color: rgb(242,242,242);
+
+}
+.contact-wrap h3{
+	width: 100%;
+	text-align: center;
+	margin-top:30px;
+	color: rgb(242,242,242);
+}
+
+.contact-button{
+
+	width: 60%;
+	margin: 0 auto;
+	border: 2px solid white;
+	text-align: center;
+	border-radius: 5px;
+	visibility: hidden;
+	height: 0;	
+}
+.contact-button h3{
+
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	color: white;
+}
+.contact-form-wrap{
+	width: 50%;
+	padding: 100px 0 100px 0;
+
+}
+.contact-form-wrap .contact-form{
+	text-align: center;
+}
+.contact-form .form-input{
+	width: 70%;
+	height: 1.8rem;
+	font-size: 0.8rem;	
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+#message-field{
+	height: 10rem;
+	resize: none;
+}
+#submit-button{
+	width: 50%;
+	color: white;
+	font-size: 1.2rem;
+	padding: 5px 0;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+
+}
+
+
+footer{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	background-color: rgb(242,242,242);
+}
+footer h4{
+	width: 100%;
+	display: block;
+	margin-top: 25px;
+	text-align: center;
+}
+footer .social-box{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+footer .social-box img{
+
+	display: inline;
+	width: 40px;
+	height: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*-----------------------Style de SGMM -----------------------------*/
+
+.content-container{
+
+	width: 100%;
+	height:200px;
+	padding-top: 100px;
+	
+}
+.content-title{
+	color: #3956AB;
+	font-weight: bold;
+	padding-left: 40px;
+}
+.content-container p{
+
+	margin-top: 20px;
+	padding-left: 40px;
+}
+.content-container .blue-container{
+
+	width: 100%;
+	height: 400px;
+	margin-top: 50px;
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	line-height: 0;
+	background-color: #3F538C;
+
+}
+.blue-container img{
+
+	height: 400px;
+	width: 50%;
+	object-fit: cover;
+}
+.blue-container .bullet-container{
+	width: 50%;
+	height: 400px;
+	display: flex;
+	padding: 60px 0px 60px 0px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+.bullet-container .bullet{
+	width: 100%;
+	line-height: 1rem;
+	vertical-align: middle;
+	padding-left: 30%;
+}
+
+.bullet .bullet-text{
+
+	width: 70%;
+	display: inline-block;
+	font-size: 0.9rem;
+	font-style: italic;
+	color: white;
+	margin-left: 20px;
+	
+}
+.bullet-container img{
+
+	width: 1.2rem;
+	height: 1.2rem;
+	object-fit: cover;
+	display: inline-block;
+	
+}
+.bullet-container .heading{
+	font-size: 1.3rem;
+	line-height: 2rem;
+	position: static;
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: white;
+
+}
+.quote{
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding: 50px 0;
+
+}
+.quote-title{
+	width: 100%;
+	color: #3956AB;
+}
+.quote-form{
+
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+}
+.quote-form input{
+
+	width: 250px;
+	height: 1.7rem;
+	font-size: 0.9rem;
+	margin:0 15px 0 15px;
+	border: none;
+	border-bottom: 1px solid grey;
+}
+#submit-form-button{
+	width: 30%;
+	display: block;
+	margin:0 auto;
+	margin-top:40px;
+	color: white;
+	font-size: 1.2rem;
+	padding: 5px 0;
+	background-color: green;
+	border: 2px solid white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.quote p{
+	display: block;
+	margin:0 auto;
+	width: 100%;
+	margin-top: 20px;
+}
+.quote h3{
+	display: block;
+	width: 250px;
+	font-size:1.2rem;
+	margin: 10px auto 0 auto;
+	padding: 10px 15px;
+	background-color: rgb(241,241,241);
+}
+/*-----------------------Layout para tablets-----------------------------*/
+/*-----------------------Layout para tablets-----------------------------*/
+/*-----------------------Layout para tablets-----------------------------*/
+
+
 @media only screen and (max-width: 1000px){
+
+
+
 
 .show{
 	margin-top: 9rem;
 }
 
-ul {
+.nav-container{
+	/*position: absolute;*/
+}
+
+ul{
 	position: absolute;
+	float: none;
 	width: 100%;
 	height: 14rem;
 	margin-top: -8rem;
 	display: inline-block;
-	z-index: 98;
-		transition: margin-top 0.4s;
-	
 }
-li{
+ul li{
 
 	padding: 0;
 	background-color: rgb(250,250,250);
 	box-sizing: border-box;
 	padding-top: 15px;
 	padding-bottom: 15px;
-
 }
 
-
+.social-box ul{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;	
+	background-color: red;
+}
 .hamburger-icon{
 	width: 70px;
 	height: 3.5rem;
@@ -173,17 +618,25 @@ li{
 	background: url(images/hamburger-icon.png) no-repeat center;
 	background-size: 2rem 2rem;
 	display: block;
-
 }
 
 
 .logo{
 	margin-left: 25px;
 }
+.nav-contact{
+	margin-right: 0px;
+	min-width: 100px;
+}
 
-.banner{
-	-webkit-filter: blur(2px); /* Safari */
-    filter: blur(2px);
+#wa-icon{
+	margin-left: 30px;
+}
+
+.nav-contact h4{
+
+	max-width: 0px;
+	visibility: hidden;
 }
 
 #text-banner{
@@ -194,13 +647,163 @@ li{
 
 }
 
+#nuestros-servicios p{
+	margin-top: 30px;
+	width: 80%;
+}
+
 .banner{
 	height: 500px;
 }
 
-.nav-contact{
-	margin-right: 0px;
-	min-width: 100px;
+.seccion-seguros .seguro-contenido{
+
+	width: 32%;
+	max-width: 32%;
+	cursor: pointer;
+
+}
+
+#sgmm, #seguroAuto{
+
+	max-width: 48%;
+	width: 48%;
+}
+
+.contact-wrap{
+	width: 100%;
+	padding: 0 100px;
+}
+.contact-form-wrap{
+	width: 100%;
+	padding: 50px 0;
+	padding-top: 0;
+}
+.contact-form-wrap .form-input{
+	width: 50%;
+}
+
+
+/*-----------------------Style de SGMM -----------------------------*/
+
+.bullet-container .heading{
+	padding:0 20px 0 20px;
+}
+.quote-form input{
+
+	margin-bottom: 20px;
+}
+
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 700px){
+
+.banner{
+	height: 550px;
+}
+
+.seccion-seguros .seguro-contenido{
+
+	width: 48%;
+	max-width: 48%;
+	margin:;
+}
+
+.seccion-seguros{
+
+	width: 95%;
+	margin-top: 20px;
+	
+}
+.seccion-seguros .seguro-contenido img{
+	object-fit: cover;
+	width: 100%;
+	height: 240px;
+	display: block;
+}
+
+.seccion-seguros .seguro-contenido h4{
+	width: 90%;
+	padding-top: 10px;
+	margin: 0 auto;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.profile-container{
+	
+	width: 100%;
+
+}
+
+.contact-wrap{
+	width: 90%;
+}
+
+.contact-wrap .cta-wa, .cta-mail{
+	visibility: hidden;
+	height: 0;
+}
+
+.contact-button{
+	visibility: visible;
+	height: auto;
+	width: 70%;
+}
+.contact-button h3{
+	margin-bottom: 5px;
+}
+#send-mail-button{
+	display: none;
+}
+.contact-wrap{
+	width: 100%;
+	padding: 0 20px;
+}
+.contact-form-wrap{
+	width: 100%;
+	padding: 50px 0;
+	padding-top: 0;
+}
+.contact-form-wrap .form-input{
+	width: 80%;
+}
+
+
+/*-----------------------Style de SGMM -----------------------------*/
+
+.content-container p{
+	padding: 0;
+	text-align: center;
+
+}
+.blue-container{
+	min-height: 800px;
+}
+.blue-container img{
+	display: block;
+	width: 100%;
+}
+.blue-container .bullet-container{
+	width: 100%;
+}
+.bullet-container .bullet{
+	padding-left: 10%;
+}
+.bullet-container img{
+
+	width: 1.2rem;
+	height: 1.2rem;
+	object-fit: cover;
+	display: inline-block;
+	
+}
+.quote-form input{
+	width: 75%;
+}
+#submit-form-button{
+	width: 50%;
 }
 
 }

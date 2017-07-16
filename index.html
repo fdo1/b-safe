@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<!--<script src="responsiveslides.min.js"></script>-->
 
 		 <meta name="HandheldFriendly" content="true">
   		<meta name="viewport" content="width=device-width, initial-scale=0.666667, maximum-scale=0.666667, user-scalable=0">
@@ -18,41 +20,7 @@
 	
 	<body>
 		
-		<header>
-			<div class="nav-container"> 
-
-			<a href="#" class="hamburger-icon"><img src=""></a> 
-
-
-			<div class="logo">
-
-			</div>
-
-
-			<ul class="menu-list">
-			
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Quiénes somos</a></li>
-					<li><a href="#">Nuestros servicios</a></li>
-					<li><a href="#">Contacto</a></li>
-
-			</ul>		
-		
-
-			<div class="nav-contact">
-				<h4>¡Escríbenos!</h4>
-			</div>
-
-			</div>
-
-		</header>
-		<script>
-
-			$('.hamburger-icon').on('click', function(){ 
-				$('ul').toggleClass('show');
-				//$('ul').slideToggle(400);
-			});
-		</script>
+		<div class="include-header"></div>
 
 		<div class="banner" width:"100%">
 			<div id="text-banner">
@@ -64,11 +32,188 @@
 
 		<div id="nuestros-servicios">
 			
-			<h1>Nuestros Servicios</h1>
+			<h1>Nuestros Servicios</h1><hr>
+
+			<p id="descripcion-servicios">
+				¿Necesitas un seguro o un plan de financiamiento pero no sabes cuál te conviene más?<br><br>
+				En B-Safe te asesoramos desde el principio para que elijas la mejor opción.<br><br> Pero es no es todo.
+				Una vez que tengas tu seguro, nosotros estaremos a tu lado en caso de algún percance y nos
+				encargaremos de que todo salga bien.
+			</p>
+			
+			<div class="seccion-seguros">
+
+
+			<div class="seguro-contenido" id="sgmm">
+				<a href="seguro-de-gastos-medicos-mayores.html">
+					<img src="images/seguros-gmm.jpg" alt="seguro-gastos-medicos-mayores"/>
+					<h4>Seguro de Gastos Médicos Mayores</h4>
+				<!--<div class="mas-info-button">
+					<span>Info</span>
+				</div>-->
+				</a>
+			</div>
+
+			<div class="seguro-contenido" id="seguroAuto">
+				<a href="seguro-de-auto.html">
+					<img src="images/seguros-auto.jpg" alt="seguros-auto"/>
+					<h4>Seguro de Auto</h4>
+				</a>
+				
+			</div>
+
+			<div class="seguro-contenido">
+				<a href="plan-educativo.html">
+					<img src="images/plan-educativo.jpg" alt="plan-educativo"/>
+					<h4>Plan Educativo</h4>
+				</a>
+				
+			</div>
+
+			<div class="seguro-contenido">
+				<a href="plan-inversion.html">
+					<img src="images/plan-inversion.jpg" alt="plan-inversion"/>
+					<h4>Plan de Inversion</h4>
+				</a>
+				
+			</div>
+
+			<div class="seguro-contenido">
+				<a href="plan-retiro.html">
+					<img src="images/plan-retiro.png" alt="plan-retiro"/>
+					<h4>Plan de Retiro</h4>
+				</a>
+				
+			</div>
+
+			<div class="seguro-contenido">
+				<a href="seguro-hogar.html">
+					<img src="images/seguro-hogar.jpeg" alt="seguro-hogar"/>
+					<h4>Seguro de Hogar</h4>
+				</a>
+				
+			</div>
+
+			<div class="seguro-contenido">
+				<a href="seguro-empresarial.html">
+					<img src="images/seguro-empresarial.jpg" alt="seguro-empresarial"/>
+					<h4>Seguro Empresarial</h4>
+				</a>
+				
+			</div>
+
+			<div class="seguro-contenido">
+				<a href="fianzas.html">
+					<img src="images/fianzas.jpg" alt="fianzas"/>
+					<h4>Fianzas</h4>
+				</a>
+				
+			</div>
+
+
+			</div>
 
 		</div>
 
+		<!--<div class="testimonials">-->
+
+		<div class="grey-banner">
+		  <div class="slider-container">
+					
+					<div class="profile-container">
+
+						<img src="images/testimonial-image1.png"/>
+
+						<h4>Fernando Pérez, 25 años<br>Ingeniero</h4>
+						<hr/>
+
+						<h3>"Este es el párrafo del testimonial. Este es el párrafo del testimonial"</h3>
+					</div>
+
+					<div class="profile-container">
+
+						<img src="images/seguros-auto.jpg"/>
+
+						<h4>Javier Chávez, 35 años<br>Licenciado</h4>
+						<hr/>
+
+						<h3>"Este es el párrafo del testimonial. Este es el párrafo del testimonial"</h3>
+					</div>
+
+					<div class="profile-container">
+
+						<img src="images/testimonial-image1.png"/>
+
+						<h4>Otra Persona, 22 años<br>Empresario</h4>
+						<hr/>
+
+						<h3>"Este es el párrafo del testimonial. Este es el párrafo del testimonial"</h3>
+					</div>
+
+
+		  </div>
+		</div>
+
+		<!--</div>-->
+
+		<div class="contact-banner" id="contact">
+
+		  <div class="contact-wrap">
+			<h1>!Contáctanos!</h1><hr/>
+
+			<h3>Nuestra especialidad es acompañarte durante todo el proceso de tu seguro o plan. Por eso queremos asesorarte desde el principio.
+			Si tienes una duda o quieres pedir información:</h3>
+
+			<h3 class="cta-wa">Mándanos un Whatsapp<br>55 20 67 37 69</h3>
+
+			
+
+			<div class="contact-button">
+				<a href="#"><h3>Toca para enviar Whatsapp</h3></a>
+			</div>
+
+			
+
+			<h3 class="cta-mail">Envíanos un mail<br>seguros@b-safe.com.mx</h3>
+
+			<div class="contact-button" id="send-mail-button">
+				<a href="#"><h3>Toca para enviar Mail</h3></a>
+			</div>
+
+		  </div>
+
+		  <div class="contact-form-wrap">
+		  	
+			<!--<form action="https://formspree.io/your@email.com" class="contact-form" method="POST">
+					
+					<input type="text" name="name" placeholder="Nombre" required="true" class="form-input">
+					<input type="email" name="_replyto" placeholder="Email" required="true" class="form-input">
+					<textarea name="message" placeholder="Escribe tu mensaje aquí" required="true" class="form-input" id="message-field" rows="100" cols="100"></textarea>
+					<button type="submit" value="send" id="submit-button">Enviar mail</button>
+
+			</form>-->
+			<form action="contact.php" class="contact-form" method="POST">
+					
+					<input type="text" name="name" placeholder="Nombre" required="true" class="form-input">
+					<input type="email" name="email" placeholder="Email" required="true" class="form-input">
+					<textarea name="message" placeholder="Escribe tu mensaje aquí" required="true" class="form-input" id="message-field" rows="100" cols="100"></textarea>
+					<button type="submit" value="send" id="submit-button">Enviar mail</button>
+
+			</form>
+
+
+		  </div>
+
+		</div>
+
+		<footer class="include-footer"></footer>
+
+
+		
 	</body>
 
+	<script type="text/javascript" src="functionality.js"></script>
+
+	
 
 </html>
