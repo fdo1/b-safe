@@ -436,7 +436,7 @@ footer .social-box img{
 .content-container{
 
 	width: 100%;
-	height:200px;
+	height:auto;
 	padding-top: 100px;
 	
 }
@@ -447,8 +447,10 @@ footer .social-box img{
 }
 .content-container p{
 
-	margin-top: 20px;
-	padding-left: 40px;
+	/*margin-top: 20px;*/
+	display: block;
+	/*padding-left: 40px;*/
+	
 }
 .content-container .blue-container{
 
@@ -696,11 +698,19 @@ ul li{
 
 }
 
+/*-----------------------Layout para Móviles-----------------------------*/
+/*-----------------------Layout para Móviles-----------------------------*/
+/*-----------------------Layout para Móviles-----------------------------*/
+
 
 @media only screen and (min-width: 0px) and (max-width: 700px){
 
 .banner{
-	height: 550px;
+	height: auto;
+	padding: 80px 0 30px 0;
+}
+#text-banner h1{
+	font-size: 2.5rem;
 }
 
 .seccion-seguros .seguro-contenido{
@@ -727,7 +737,7 @@ ul li{
 	width: 90%;
 	padding-top: 10px;
 	margin: 0 auto;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-weight: bold;
 }
 
@@ -775,6 +785,8 @@ ul li{
 
 .content-container p{
 	padding: 0;
+	width: 90%;
+	margin: 20px auto;
 	text-align: center;
 
 }
