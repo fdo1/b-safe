@@ -447,9 +447,9 @@ footer .social-box img{
 }
 .content-container p{
 
-	/*margin-top: 20px;*/
+	margin-top: 20px;
 	display: block;
-	/*padding-left: 40px;*/
+	padding-left: 40px;
 	
 }
 .content-container .blue-container{
@@ -583,7 +583,7 @@ footer .social-box img{
  
 }*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
 
 
 
@@ -711,7 +711,7 @@ ul li{
 /*-----------------------Layout para Móviles-----------------------------*/
 
 
-@media only screen and (min-width: 0px) and (max-width: 768px){
+@media only screen and (min-width: 0px) and (max-width: 700px){
 
 
 body{
