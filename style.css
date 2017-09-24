@@ -31,7 +31,9 @@ h1{
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 	align-items: center;
 	background-color: white;
 	box-shadow: 0px 0px 3px 3px #DCDCDC;
@@ -61,6 +63,7 @@ h1{
 
 ul {
 	display: flex;
+	display: -webkit-flex;
 	text-align: center;
 	height: auto;
 	overflow: hidden;
@@ -98,6 +101,7 @@ a:visited{
 	height: 3.5rem;
 	margin-right: 50px;
 	display: flex;
+	display: -webkit-flex;
 	align-items: center;
 	overflow: hidden;
 	z-index: 100;
@@ -181,8 +185,11 @@ a:visited{
 	margin: 0 auto;
 	margin-top: 40px;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 	flex-wrap: wrap;
+	-webkit-flex-wrap:wrap;
 	
 }
 .seccion-seguros .seguro-contenido{
@@ -236,7 +243,9 @@ a:visited{
 	margin-top: 70px;
 	background-color: rgb(242,242,242);
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
+	-webkit-justify-content: center;
 }	
 
 
@@ -246,8 +255,11 @@ a:visited{
 	height: auto;
 	margin-bottom: 60px;
 	display: inline-flex;
+	display: -webkit-inline-flex;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 	justify-content: space-around;
+	-webkit-justify-content: space-around;
 
 }
 
@@ -320,7 +332,9 @@ hr{
 	width: 100%;
 	height: auto;
 	display: flex;
+	display: -webkit-flex;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 	background-color: #3F538C;
 	
 }
@@ -337,8 +351,11 @@ hr{
 	margin-bottom: 50px;
 	padding: 0 20px 0 20px;
 	display: flex;
+	display: -webkit-flex;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
 
 }
 .contact-wrap h1{
@@ -429,7 +446,9 @@ footer .social-box{
 	margin-top: 20px;
 	margin-bottom: 30px;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
+	-webkit-justify-content: center;
 }
 footer .social-box img{
 
@@ -468,8 +487,11 @@ footer .social-box img{
 	margin-top: 50px;
 	padding: 0px;
 	display: flex;
+	display: -webkit-flex;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 	justify-content: center;
+	-webkit-justify-content: center;
 	line-height: 0;
 	background-color: #3F538C;
 
@@ -484,10 +506,14 @@ footer .social-box img{
 	width: 50%;
 	height: 400px;
 	display: flex;
+	display: -webkit-flex;
 	padding: 60px 0px 60px 0px;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	justify-content: space-around;
+	-webkit-justify-content: space-around;
 	
 }
 .bullet-container .bullet{
@@ -648,7 +674,9 @@ ul li{
 	width: 100%;
 	height: auto;
 	display: flex;
-	justify-content: center;	
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;	
 	background-color: red;
 }
 .hamburger-icon{
