@@ -48,7 +48,7 @@ h1{
 }
 
 .logo{
-	min-width: 150px;
+	min-width: 100px;
 	height: 3.5rem;
 	text-align: center;
 	background: url(images/logo-b-safe.jpg) no-repeat center;
@@ -759,8 +759,8 @@ body{
 
 .seccion-seguros .seguro-contenido{
 
-	width: 48%;
-	max-width: 48%;
+	    max-width: 47%;
+    width: 47%;
 	margin:;
 }
 
