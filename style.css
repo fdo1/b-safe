@@ -18,6 +18,11 @@ header {
 	height: 3.5rem;
 	position: absolute;
 	z-index: 100;
+	top:0;
+}
+
+h1{
+	color: darkblue;
 }
 
 
@@ -130,13 +135,15 @@ a:visited{
 }
 
 #text-banner{
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  top: 25%;
-  width: 60%;
-  color: rgb(242,242,242);
-  font-size: 1.7rem;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* position: relative; */
+    text-align: center;
+    box-sizing: border-box;
+    /* top: 50px; */
+    width: 60%;
+    color: darkblue;
+    font-size: 1.7rem;
 
 }
 
@@ -202,6 +209,7 @@ a:visited{
 	margin: 0 auto;
 	font-size: 1.3rem;
 	font-weight: bold;
+	color: darkblue;
 }
 /*.seccion-seguros .seguro-contenido .mas-info-button{
 
@@ -381,7 +389,7 @@ hr{
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
+    /* display: none; <- Crashes Ch on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
@@ -569,6 +577,19 @@ footer .social-box img{
 	padding: 10px 15px;
 	background-color: rgb(241,241,241);
 }
+
+
+/* --------------------- Thank You Page ----------------------------------*/
+
+#gracias{
+	text-align: center;
+	margin-top: 100px;
+}
+#gracias p{
+	margin-top: 30px;
+}
+
+
 /*-----------------------Layout para tablets-----------------------------*/
 /*-----------------------Layout para tablets-----------------------------*/
 /*-----------------------Layout para tablets-----------------------------*/
@@ -588,20 +609,29 @@ footer .social-box img{
 
 
 .show{
-	margin-top: 9rem;
+	/*margin-top: 9rem;*/
+	    top: 11.7rem;
+    max-height: 14rem;
+
+
 }
 
 .nav-container{
 	/*position: absolute;*/
+	z-index: 100;
+
 }
 
 ul{
 	position: absolute;
-	float: none;
 	width: 100%;
 	height: 14rem;
 	margin-top: -8rem;
 	display: inline-block;
+	left: 0;
+	z-index: 99;
+	max-height: 0;
+
 }
 ul li{
 

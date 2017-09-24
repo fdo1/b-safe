@@ -27,7 +27,8 @@
 
 	<section  class="content-container">
 			<h1 class="content-title">Seguro de Auto</h1>
-			<p>Aquí va el text que explicará de manera general el servicio que se ofrece de seguro de auto.</p>
+			<p>Para protegerte de los riesgos cotidianos como robo, choques o accidentes viales, buscamos entre las principales aseguradoras el mejor 
+			precio y cobertura para tu auto.</p>
 
 			<div class="blue-container">
 				<img src="images/seguros-auto.jpg" alt="seguro-de-gastos-medicos-mayores">
@@ -50,10 +51,10 @@
 
 					</ul>-->
 
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Aquí va la descripción 1	</h4></span>
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Esta puede ser otra descripción	</h4></span>
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Más explicación de por qué	</h4></span>
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Un último punto para convencer	</h4></span>
+					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Contamos con las mejores compañías de seguros para darte el mejor precio con la mejor cobertura.	</h4></span>
+					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	En caso de un percance, te ayudamos con asesoría personalizada.	</h4></span>
+					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Puedes cotizar tu seguro desde este link 	</h4></span>
+
 				</div>
 			</div>
 
@@ -62,15 +63,18 @@
 				<h1 class="quote-title">Obtén una cotización</h1>
 
 				<p>Envíanos un Whatsapp</p>
-				<a href="https://api.whatsapp.com/send?phone=5215520673769"><h3>55 20 67 37 69</h3></a>
+				<a href="https://api.whatsapp.com/send?phone=5215540458063"><h3>55 40 45 80 63</h3></a>
 
 				<p>Déjanos tus datos y nos pondremos en contacto contigo para asesorarte.</p>
 
-				<form class="quote-form">
+				<form action="https://formspree.io/fernando.madser@gmail.com" class="quote-form" method="POST">
 					
-					<input type="text" name="name" placeholder="Nombre" required="true">
-					<input type="number" name="phone" placeholder="Teléfono" required="true">
-					<input type="email" name="email" placeholder="Email" required="true">
+					<input type="text" name="name" placeholder="Nombre" required="true" class="form-input">
+					<input type="text" name="message" placeholder="Teléfono" required="true" class="form-input">
+					<input type="email" name="_replyto" placeholder="Email" required="true" class="form-input">
+					<input type="hidden" name="_format" value="plain" />
+					<input type="hidden" name="_next" value="/fianzas.html" />
+					<input type="hidden" name="_language" value="es" />
 					<button type="submit" value="send" id="submit-form-button">Enviar mail</button>
 
 				</form>

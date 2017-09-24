@@ -27,7 +27,8 @@
 
 	<section  class="content-container">
 			<h1 class="content-title">Seguro de Gastos Médicos Mayores</h1>
-			<p>Aquí va el text que explicará de manera general el servicio que se ofrece de Gastos Médicos Mayores</p>
+			<p>Te da la tranquilidad de saber que si pierdes la salud tendrás un respaldo qeu ayudará a ahcerle frente a los grandes costos
+			de la medicina general.</p>
 
 			<div class="blue-container">
 				<img src="images/seguros-gmm.jpg" alt="seguro-de-gastos-medicos-mayores">
@@ -50,10 +51,11 @@
 
 					</ul>-->
 
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Aquí va la descripción 1	</h4></span>
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Esta puede ser otra descripción	</h4></span>
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Más explicación de por qué	</h4></span>
-					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Un último punto para convencer	</h4></span>
+					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Somos especialistas y juntos encontramos la
+					póliza ideal para tus necesidades.	</h4></span>
+					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Tendrás una asesoría personalizada  en el momento de la enfermedad o accidente.	</h4></span>
+					<span class="bullet"><img src="images/check-icon.png"><h4 class="bullet-text">	Te ayudamos en el proceso de reclamación ante la aseguradora.	</h4></span>
+					
 				</div>
 			</div>
 
@@ -62,15 +64,19 @@
 				<h1 class="quote-title">Obtén una cotización</h1>
 				
 				<p>Envíanos un Whatsapp</p>
-				<a href="https://api.whatsapp.com/send?phone=5215520673769"><h3>55 20 67 37 69</h3></a>
+				<a href="https://api.whatsapp.com/send?phone=5215540458063"><h3>55 40 45 80 63</h3></a>
 
 				<p>Déjanos tus datos y nos pondremos en contacto contigo para asesorarte.</p>
 
-				<form class="quote-form">
+
+				<form action="https://formspree.io/fernando.madser@gmail.com" class="quote-form" method="POST">
 					
-					<input type="text" name="name" placeholder="Nombre" required="true">
-					<input type="number" name="phone" placeholder="Teléfono" required="true">
-					<input type="email" name="email" placeholder="Email" required="true">
+					<input type="text" name="name" placeholder="Nombre" required="true" class="form-input">
+					<input type="text" name="message" placeholder="Teléfono" required="true" class="form-input">
+					<input type="email" name="_replyto" placeholder="Email" required="true" class="form-input">
+					<input type="hidden" name="_format" value="plain" />
+					<input type="hidden" name="_next" value="/fianzas.html" />
+					<input type="hidden" name="_language" value="es" />
 					<button type="submit" value="send" id="submit-form-button">Enviar mail</button>
 
 				</form>

@@ -5,6 +5,7 @@
 	<head>
 	
 		<title>B-Safe Seguros</title>
+		<meta charset="utf-8">
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
@@ -14,6 +15,7 @@
 
 		<meta name="HandheldFriendly" content="true">
   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  		<meta http-equiv="X-UA-Compatible" content="IE=11">
   		<!--<meta name="viewport" content="width=device-width">-->
 	
 	</head>
@@ -22,23 +24,24 @@
 		
 		<div class="include-header"></div>
 
-		<div class="banner" width:"100%">
+		<!--<div class="banner" width:"100%">-->
 			<div id="text-banner">
-				<h1>Estamos a tu lado para que siempre estés seguro</h1>
-				<hr/>
-				<h3>Somos el broker de seguros más confiable de México</h3>
+			
+				<h3>Expertos en proteger lo que más amas</h3>
+				<img src="images/logo-b-safe.jpg">
 			</div>
-		</div>
+		<!--</div>-->
 
 		<div id="nuestros-servicios">
 			
 			<h1>Nuestros Servicios</h1><hr>
 
 			<p id="descripcion-servicios">
-				¿Necesitas un seguro o un plan de financiamiento pero no sabes cuál te conviene más?<br><br>
-				En B-Safe te asesoramos desde el principio para que elijas la mejor opción.<br><br> Pero es no es todo.
-				Una vez que tengas tu seguro, nosotros estaremos a tu lado en caso de algún percance y nos
-				encargaremos de que todo salga bien.
+				Somos el intermediario entre las compañías de seguros y tú.<br> De entre la amplia gama de seguros e inversiones que 
+				ofrecen las compañías, nosotros analizamos y encontramos la opción que más se apegue a tus necesidades.<br><br>
+				En caso de que sufras un siniestro nosotros estaremos a tu lado apra asesorarte y nos encargamos de que los términos 
+				de tu contrato o póliza se cumplan.<br><br>
+				Nos encargamos, oportunamente, de la administración, renovación y cobranza de tu póliza, para que tú puedas dormir tranquilo.
 			</p>
 			
 			<div class="seccion-seguros">
@@ -184,22 +187,25 @@
 
 		  <div class="contact-form-wrap">
 		  	
-			<!--<form action="https://formspree.io/your@email.com" class="contact-form" method="POST">
+			<form action="https://formspree.io/fernando.madser@gmail.com" class="contact-form" method="POST">
 					
 					<input type="text" name="name" placeholder="Nombre" required="true" class="form-input">
 					<input type="email" name="_replyto" placeholder="Email" required="true" class="form-input">
+					<input type="hidden" name="_format" value="plain" />
+					<input type="hidden" name="_next" value="/fianzas.html" />
+					<input type="hidden" name="_language" value="es" />
 					<textarea name="message" placeholder="Escribe tu mensaje aquí" required="true" class="form-input" id="message-field" rows="100" cols="100"></textarea>
 					<button type="submit" value="send" id="submit-button">Enviar mail</button>
 
-			</form>-->
-			<form action="contact.php" class="contact-form" method="POST">
+			</form>
+			<!--<form action="contact.php" class="contact-form" method="POST">
 					
 					<input type="text" name="name" placeholder="Nombre" required="true" class="form-input">
 					<input type="email" name="email" placeholder="Email" required="true" class="form-input">
 					<textarea name="message" placeholder="Escribe tu mensaje aquí" required="true" class="form-input" id="message-field" rows="100" cols="100"></textarea>
 					<button type="submit" value="send" id="submit-button">Enviar mail</button>
 
-			</form>
+			</form>-->
 
 
 		  </div>
@@ -213,6 +219,8 @@
 	</body>
 
 	<script type="text/javascript" src="functionality.js"></script>
+
+
 
 	
 

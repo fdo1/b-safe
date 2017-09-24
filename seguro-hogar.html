@@ -66,15 +66,17 @@
 
 				<p>Déjanos tus datos y nos pondremos en contacto contigo para asesorarte.</p>
 
-				<form class="quote-form">
+				<form action="https://formspree.io/fernando.madser@gmail.com" class="quote-form" method="POST">
 					
-					<input type="text" name="name" placeholder="Nombre" required="true">
-					<input type="number" name="phone" placeholder="Teléfono" required="true">
-					<input type="email" name="email" placeholder="Email" required="true">
+					<input type="text" name="name" placeholder="Nombre" required="true" class="form-input">
+					<input type="text" name="message" placeholder="Teléfono" required="true" class="form-input">
+					<input type="email" name="_replyto" placeholder="Email" required="true" class="form-input">
+					<input type="hidden" name="_format" value="plain" />
+					<input type="hidden" name="_next" value="/fianzas.html" />
+					<input type="hidden" name="_language" value="es" />
 					<button type="submit" value="send" id="submit-form-button">Enviar mail</button>
 
 				</form>
-
 			</div>
 
 			<footer class="include-footer"></footer>
