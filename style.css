@@ -534,6 +534,10 @@ footer .social-box img{
 	margin-left: 20px;
 	
 }
+.bullet .bullet-text a {
+	color: white;
+	text-decoration: underline;
+}
 .bullet-container img{
 
 	width: 1.2rem;
@@ -562,6 +566,9 @@ footer .social-box img{
 .quote-title{
 	width: 100%;
 	color: #3956AB;
+}
+.quote-title a{
+	text-decoration: underline;
 }
 .quote-form{
 
