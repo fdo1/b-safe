@@ -483,7 +483,7 @@ footer .social-box img{
 .content-container .blue-container{
 
 	width: 100%;
-	height: 400px;
+	height: auto;
 	margin-top: 50px;
 	padding: 0px;
 	display: flex;
@@ -497,14 +497,14 @@ footer .social-box img{
 
 }
 .blue-container img{
-
-	height: 400px;
+	max-height: 550px;
+	height: auto;
 	width: 50%;
 	object-fit: cover;
 }
 .blue-container .bullet-container{
 	width: 50%;
-	height: 400px;
+	height: auto;
 	display: flex;
 	display: -webkit-flex;
 	padding: 60px 0px 60px 0px;
@@ -521,6 +521,7 @@ footer .social-box img{
 	line-height: 1rem;
 	vertical-align: middle;
 	padding-left: 30%;
+	margin-bottom: 15px;
 }
 
 .bullet .bullet-text{
@@ -873,6 +874,7 @@ body{
 	min-height: 800px;
 }
 .blue-container img{
+	height: 400px;
 	display: block;
 	width: 100%;
 }
